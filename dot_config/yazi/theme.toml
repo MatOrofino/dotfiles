@@ -1,0 +1,16 @@
+[flavor]
+light = "noctalia"
+dark = "noctalia"
+
+[icon]
+prepend_dirs = [
+  { name = "Templates", text = ""},
+  { name = "Thunder", text = "󱐋"},
+  { name = "Screenshots", text = ""},
+  { name = "Projects", text = "󱧶"},
+  { name = "MCUViewer", text = ""}
+]
+
+[git]
+unstaged = { fg = "blue" }
+deleted  = { fg = "red", bold = true }

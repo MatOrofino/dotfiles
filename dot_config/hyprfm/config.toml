@@ -1,0 +1,79 @@
+# hyprfm configuration
+# Everything here is optional - remove a key to fall back to the default.
+# Apply changes from the app menu: Reload Config.
+# Extra styling: put GTK4 CSS in ~/.config/hyprfm/style.css
+
+[general]
+start_dir = "~"
+show_hidden = false
+default_view = "list"        # "list" or "grid"
+sort_by = "name"             # "name", "size" or "modified"
+directories_first = true
+single_click = false         # true = Dolphin-style single-click open
+terminal = ""                # e.g. "kitty" - auto-detected when empty
+terminal_sync = true         # embedded terminal follows navigation
+date_format = "%d %b %Y  %H:%M"
+
+[window]
+width = 1160
+height = 720
+sidebar_width = 210
+
+[appearance]
+accent = "#3584e4"
+font = ""                    # e.g. "Inter"
+icon_size_list = 16
+icon_size_grid = 64
+css = ""                     # inline GTK CSS, applied on top of everything
+
+# Keybindings use GTK accelerator syntax: <Ctrl>, <Shift>, <Alt>, <Super>
+# Set a binding to "" to disable it.
+[keybindings]
+back = "<Alt>Left"
+forward = "<Alt>Right"
+up = "<Alt>Up"
+home = "<Alt>Home"
+reload = "F5"
+new-tab = "<Ctrl>t"
+close-tab = "<Ctrl>w"
+split = "F3"
+terminal-panel = "F4"
+open-terminal = "<Shift>F4"
+edit-path = "<Ctrl>l"
+filter = "<Ctrl>f"
+show-hidden = "<Ctrl>h"
+view-list = "<Ctrl>1"
+view-grid = "<Ctrl>2"
+copy = "<Ctrl>c"
+cut = "<Ctrl>x"
+paste = "<Ctrl>v"
+select-all = "<Ctrl>a"
+invert-selection = "<Ctrl><Shift>a"
+rename = "F2"
+batch-rename = "<Ctrl>F2"
+duplicate = "<Ctrl>d"
+trash = "Delete"
+delete = "<Shift>Delete"
+new-folder = "<Ctrl><Shift>n"
+new-file = "<Ctrl><Shift>e"
+properties = "<Alt>Return"
+copy-path = "<Ctrl><Shift>c"
+add-bookmark = "<Ctrl>b"
+
+# Sidebar bookmarks. Add as many [[bookmarks]] blocks as you like.
+# [[bookmarks]]
+# name = "Projects"
+# path = "~/projects"
+# icon = "folder-symbolic"
+
+# Custom context-menu actions (like Dolphin service menus).
+# Placeholders: %f = first selected file, %F = all selected files,
+# %d = current directory. Optional mimetypes limits where it shows up.
+# [[actions]]
+# name = "Edit with GIMP"
+# command = "gimp %f"
+# mimetypes = ["image/*"]
+#
+# [[actions]]
+# name = "Open in VS Code"
+# command = "code %d"

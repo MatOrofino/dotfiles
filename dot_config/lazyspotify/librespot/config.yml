@@ -1,0 +1,15 @@
+log_level: error
+zeroconf_enabled: false
+mpris_enabled: true
+audio_backend: alsa
+device_name: lazyspotify
+credentials:
+    type: device_auth
+server:
+    enabled: true
+    address: 127.0.0.1
+    port: 4040
+    allow_origin: '*'
+    cert_file: ""
+    key_file: ""
+    image_size: small

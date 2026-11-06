@@ -1,0 +1,12 @@
+nano $nu.env-path
+nano $nu.config-path
+bash
+cd
+nano $nu.config-path
+mkdir ~/.local/share/atuin/<\n>atuin init nu | save ~/.local/share/atuin/init.nu
+nano $nu.config-path
+ls
+bash
+ls
+ls Downloads/
+fish

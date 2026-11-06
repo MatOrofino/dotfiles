@@ -1,0 +1,17 @@
+[stats]
+
+[keys]
+
+[sync]
+records = true
+enter_accept = true
+
+[preview]
+
+[daemon]
+
+[search]
+
+[tmux]
+
+[ui]

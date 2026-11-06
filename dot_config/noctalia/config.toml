@@ -1,0 +1,319 @@
+[backdrop]
+blur_intensity = 0.12999999709427357
+enabled = true
+tint_intensity = 0.099999997764825821
+
+[bar]
+order = ["default"]
+
+[bar.default]
+center = ["control-center", "clock", "wallpaper"]
+end = [
+  "tray",
+  "gamermode",
+  "volume",
+  "network",
+  "battery",
+  "notifications",
+  "session",
+]
+font_family = "JetBrainsMono NF"
+margin_ends = 0
+radius = 0
+radius_bottom_left = 10
+radius_bottom_right = 10
+scale = 1.0500000081956387
+start = ["launcher", "workspaces", "spacer_2", "ram", "media", "active_window"]
+
+[control_center]
+width = 800
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[[control_center.shortcuts]]
+type = "clipboard"
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [
+  "desktop-widget-0000000000000001",
+  "desktop-widget-0000000000000002",
+]
+
+[desktop_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
+
+[desktop_widgets.widget.desktop-widget-0000000000000001]
+box_height = 160.0
+box_width = 400.0
+cx = 960.0
+cy = 268.0
+output = "eDP-1"
+placement_height = 1080.0
+placement_width = 1920.0
+rotation = 0.0
+type = "clock"
+
+[desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+background = true
+background_opacity = 0.47000000000000003
+background_padding = 4
+background_radius = 8
+clock_style = "digital"
+color = "primary"
+font_family = ""
+shadow = false
+
+[desktop_widgets.widget.desktop-widget-0000000000000002]
+box_height = 176.0
+box_width = 1920.0
+cx = 960.0
+cy = 992.0
+output = "eDP-1"
+placement_height = 1080.0
+placement_width = 1920.0
+rotation = 0.0
+type = "audio_visualizer"
+
+[desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+background = false
+bands = 80
+centered = false
+mirrored = false
+show_when_idle = false
+
+[dock]
+auto_hide = true
+reserve_space = false
+
+[idle]
+behavior_order = ["lock", "screen-off", "lock-and-suspend"]
+pre_action_fade_seconds = 3
+
+[idle.behavior.lock]
+action = "lock"
+enabled = true
+timeout = 600.0
+
+[idle.behavior.lock-and-suspend]
+action = "lock_and_suspend"
+enabled = true
+timeout = 900.0
+
+[idle.behavior.screen-off]
+action = "screen_off"
+enabled = true
+timeout = 660.0
+
+[location]
+address = "Sao Paulo"
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+  "lockscreen-login-box@eDP-1",
+  "lockscreen-widget-0000000000000003",
+]
+
+[lockscreen_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
+
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+box_height = 196.0
+box_width = 720.0
+cx = 960.0
+cy = 910.0
+output = "eDP-1"
+placement_height = 1080.0
+placement_width = 1920.0
+rotation = 0.0
+type = "login_box"
+
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+background_color = "surface_container"
+background_opacity = 0.88
+background_radius = 0.0
+center_password_text = true
+input_opacity = 1.0
+input_radius = 0.0
+layout = "regular"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = false
+show_media = true
+show_session_buttons = true
+show_unlock_hint = false
+show_weather = true
+
+[lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+box_height = 128.0
+box_width = 400.0
+cx = 960.0
+cy = 332.0
+output = "eDP-1"
+placement_height = 1080.0
+placement_width = 1920.0
+rotation = 0.0
+type = "clock"
+
+[lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+background_radius = 0
+
+[plugin_settings."nomadcxx/gamer-mode"]
+main_open_near_click = true
+profile = "heavy"
+
+[plugins]
+enabled = ["nomadcxx/gamer-mode"]
+
+[shell]
+avatar_path = "/home/orofino/Pictures/Wallpapers/nier4.jpg"
+corner_radius_scale = 0.0
+external_ip_enabled = true
+font_family = "JetBrainsMono Nerd Font Mono"
+niri_overview_type_to_launch_enabled = true
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+umbriel_audio_provider_enabled = true
+umbriel_overview_close_on_launch_enabled = true
+umbriel_overview_type_to_launch_enabled = true
+
+
+[shell.panel]
+open_near_click_control_center = true
+session_placement = "floating"
+session_position = "center"
+shadow = false
+
+[shell.session]
+grid = true
+grid_columns = 5
+
+[shell.shadow]
+alpha = 0.0
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "soft"
+
+[theme.templates]
+builtin_ids = [
+  "btop",
+  "cava",
+  "gtk3",
+  "gtk4",
+  "hyprland",
+  "kcolorscheme",
+  "kitty",
+  "mango",
+  "niri",
+  "qt",
+  "starship",
+  "sway",
+  "umbriel",
+]
+community_ids = [
+  "spicetify",
+  "spotifast",
+  "zen-browser",
+  "darktable",
+  "gimp",
+  "inkscape",
+  "lazyvim",
+  "libreoffice",
+  "neovim",
+  "obsidian",
+  "vscode",
+  "zed",
+  "steam",
+  "fastfetch",
+  "obs",
+  "hyprtoolkit",
+  "bat",
+  "fzf",
+  "lazygit",
+  "starship",
+  "tmux",
+  "yazi",
+]
+
+[theme.templates.user.obsidian_extra]
+input_path = "/home/$USER/.config/noctalia/Obsidian/obsidian.css"
+output_path = "/home/$USER/Documents/vault/.obsidian/snippets/noctalia.css"
+
+[wallpaper]
+directory = "/home/orofino/Pictures/Wallpapers"
+transition_on_startup = true
+
+[wallpaper.default]
+path = "/home/orofino/Pictures/Wallpapers/nier9.jpg"
+
+[wallpaper.last]
+path = "/home/orofino/Pictures/Wallpapers/nier9.jpg"
+
+[wallpaper.monitors.eDP-1]
+path = "/home/orofino/Pictures/Wallpapers/nier9.jpg"
+
+[widget.active_window]
+max_length = 100
+
+[widget.battery]
+display_mode = "graphic"
+hide_when_full = true
+hide_when_plugged = true
+show_label = false
+
+[widget.gamermode]
+type = "nomadcxx/gamer-mode:gamermode"
+
+[widget.launcher]
+capsule = true
+capsule_padding = 4
+capsule_radius = 5
+custom_image = "/home/orofino/Pictures/arch.png"
+custom_image_colorize = true
+scale = 1.25
+
+[widget.media]
+hide_when_no_media = true
+
+[widget.network]
+show_label = false
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.sysmon]
+stat = "swap_pct"
+
+[widget.tray]
+drawer = true
+
+[widget.volume]
+show_label = false
+
+[widget.workspaces]
+labels_only_when_occupied = true
+scroll_repeat = "steps"

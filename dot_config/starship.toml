@@ -1,0 +1,356 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+palette = "noctalia"
+
+format = """
+[╭─](magenta)\
+[ $os](bg:magenta )\
+$directory\
+[](fg:magenta bg:lavender)\
+$git_branch\
+$git_status\
+[](fg:lavender bg:sapphire)\
+$nodejs\
+$rust\
+$golang\
+$php\
+$aws\
+$buf\
+$bun\
+$c\
+$cpp\
+$cmake\
+$conda\
+$crystal\
+$dart\
+$deno\
+$java\
+$julia\
+$kotlin\
+$lua\
+$meson\
+$nim\
+$nix_shell\
+$ocaml\
+$package\
+$perl\
+$pixi\
+$python\
+$rlang\
+$ruby\
+$scala\
+$swift\
+$xmake\
+$zig\
+[](fg:sapphire bg:text)\
+$time\
+$cmd_duration\
+[ ](fg:text)\
+\n[╰─](magenta)\
+$sudo\
+$shell $character"""
+
+[directory]
+style = "fg:black bg:magenta"
+format = "[ $path ]($style)"
+read_only = " 󰌾"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 Documents"
+"Downloads" = " Downloads"
+"Music" = " Music"
+"Pictures" = " Pictures"
+"Thunder" = "󱐋 Thunder"
+"Videos" = "  Videos"
+
+[git_branch]
+symbol = ""
+style = "bg:lavender"
+format = '[[ $symbol $branch ](fg:black bg:lavender)]($style)'
+
+[git_status]
+style = "bg:lavender"
+format = '[[($all_status$ahead_behind )](fg:black bg:lavender)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[php]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[aws]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[buf]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[bun]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[c]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[cpp]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[cmake]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[conda]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[crystal]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[dart]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[deno]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[java]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[julia]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[lua]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[meson]
+symbol = "󰔷"
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[nim]
+symbol = "󰆥"
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[package]
+symbol = "󰏗"
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[perl]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[pixi]
+symbol = "󰏗"
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[python]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($virtualenv) ($version) ](fg:black bg:sapphire)]($style)'
+
+[rlang]
+symbol = "󰟔"
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[ruby]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[scala]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[status]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[swift]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[xmake]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[zig]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol ($version) ](fg:black bg:sapphire)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"                                 # Hour:Minute Format
+style = "bg:text"
+format = '[[  $time ](fg:black bg:text)]($style)'
+
+[os]
+disabled = false
+style = "bg:magenta fg:#090c0c"
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Elementary = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Ios = "󰀷 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+Zorin = " "
+
+[cmd_duration]
+disabled = false
+min_time = 1_500
+style = "bg:text"
+format = '[[󱎫 $duration](fg:black bg:text)]($style)'
+
+[sudo]
+disabled = false
+style = "red"
+format = "[Sudo ]($style)"
+
+[shell]
+disabled = false
+style = "bold sapphire"
+format = "[$indicator]($style)"
+
+
+# ╭──────────────────────────────────────────╮
+# │                                          │
+# ╰──────────────────────────────────────────╯
+# 
+
+# >>> NOCTALIA STARSHIP PALETTE >>>
+# Noctalia Starship Palette
+# Generated by Noctalia - do not edit manually
+
+[palettes.noctalia]
+# Standard colors
+blue      = "#dd8fa2"
+red       = "#fd4663"
+green     = "#a086dc"
+yellow    = "#c68ed4"
+cyan      = "#e39ec6"
+magenta   = "#b3a1de"
+white     = "#b1afb6"
+black     = "#262130"
+
+# Extended palette (Catppuccin-compatible names)
+rosewater = "#e494fb"
+flamingo  = "#ff6a7b"
+pink      = "#c5aeff"
+mauve     = "#b3a1de"
+maroon    = "#ff6a7b"
+peach     = "#e494fb"
+teal      = "#e39ec6"
+sky       = "#ffa8dc"
+sapphire  = "#ff96b1"
+lavender  = "#c5aeff"
+
+# Text shades
+text      = "#f2f2f3"
+subtext1  = "#b1afb6"
+subtext0  = "#696474"
+
+# Surface shades
+overlay2  = "#696474"
+overlay1  = "#696474"
+overlay0  = "#262130"
+surface2  = "#262130"
+surface1  = "#262130"
+surface0  = "#1d1a23"
+base      = "#1d1a23"
+mantle    = "#1d1a23"
+crust     = "#1d1a23"
+# <<< NOCTALIA STARSHIP PALETTE <<<

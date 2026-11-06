@@ -1,0 +1,48 @@
+git:
+  parseEmoji: true
+
+customCommands:
+- command: git commit -m '{{ .Form.emoji }} {{ .Form.message }}'
+  context: files
+  description: Commit changes using gitmojis
+  key: C
+  prompts:
+  - command: gitmoji -l
+    filter: ^(.*?) - (:.*?:) - (.*)$
+    key: emoji
+    labelFormat: '{{ .group_1 }} - {{ .group_3 }}'
+    title: 'Select a gitmoji:'
+    type: menuFromCommand
+    valueFormat: '{{ .group_2 }}'
+  - key: message
+    title: 'Enter a commit message:'
+    type: input
+
+gui:
+  theme:
+    activeBorderColor:
+      - "#a086dc"
+      - bold
+    inactiveBorderColor:
+      - "#c68ed4"
+    searchingActiveBorderColor:
+      - "#d092be"
+      - bold
+    optionsTextColor:
+      - "#b1afb6"
+    selectedLineBgColor:
+      - "#2b2636"
+    inactiveViewSelectedLineBgColor:
+      - bold
+    cherryPickedCommitFgColor:
+      - "#b1afb6"
+    cherryPickedCommitBgColor:
+      - "#d092be"
+    markedBaseCommitFgColor:
+      - "#d092be"
+    markedBaseCommitBgColor:
+      - "#fd4663"
+    unstagedChangesColor:
+      - "#fd4663"
+    defaultFgColor:
+      - "#f2f2f3"

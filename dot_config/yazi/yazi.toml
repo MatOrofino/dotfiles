@@ -1,0 +1,21 @@
+[[plugin.prepend_fetchers]]
+url   = "*"
+run   = "git"
+group = "git"
+
+[[plugin.prepend_fetchers]]
+url   = "*/"
+run   = "git"
+group = "git"
+
+[[plugin.prepend_previewers]]
+url = "*.md"
+run = 'piper -- CLICOLOR_FORCE=0 glow -w=$w -s=dark "$1"'
+
+[[plugin.prepend_previewers]]
+url = "*/"
+run = 'piper -- eza -TL=3 --color=always --icons=always --group-directories-first --no-quotes "$1"'
+
+[[plugin.append_previewers]]
+url = "*"
+run = 'piper -- hexyl --border=none --terminal-width=$w "$1"'

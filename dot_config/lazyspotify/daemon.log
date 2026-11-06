@@ -1,0 +1,80 @@
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0xa30725]
+
+goroutine 1 [running]:
+main.(*AppPlayer).loadCurrentTrack(0x2942028e6b40, {0xd26b20, 0x294202974e70}, 0x0, 0x1)
+	github.com/devgianlu/go-librespot/cmd/daemon/controls.go:308 +0x185
+main.(*AppPlayer).skipPrev(0x2942028e6b40, {0xd26b20, 0x294202974e70}, 0x0?)
+	github.com/devgianlu/go-librespot/cmd/daemon/controls.go:575 +0x405
+main.(*AppPlayer).handleApiRequest(0x2942028e6b40, {0xd26a40?, 0x13f38e0?}, {{0xcb5d04, 0x4}, {0x0, 0x0}, 0x294202974d20})
+	github.com/devgianlu/go-librespot/cmd/daemon/player.go:504 +0x796
+main.(*AppPlayer).Run(0x2942028e6b40, {0xd26a40, 0x13f38e0}, 0x294202b2a150, 0x294202b2a1c0)
+	github.com/devgianlu/go-librespot/cmd/daemon/player.go:917 +0x6cf
+main.(*App).withAppPlayer(0x2942029aec00, {0xd26a40, 0x13f38e0}, 0x2?)
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:248 +0x6b3
+main.(*App).withCredentials(...)
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:211
+main.(*App).SpotifyToken(0x2942029aec00, {0xd26a40, 0x13f38e0}, {0x29420294eaa0?, 0x29420291cda0?}, {0x2942029263c0?, 0xfc8?})
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:203 +0xc5
+main.main()
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:627 +0x745
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0xa30725]
+
+goroutine 1 [running]:
+main.(*AppPlayer).loadCurrentTrack(0x26cd227a70e0, {0xd26b20, 0x26cd22810e70}, 0x0, 0x1)
+	github.com/devgianlu/go-librespot/cmd/daemon/controls.go:308 +0x185
+main.(*AppPlayer).skipPrev(0x26cd227a70e0, {0xd26b20, 0x26cd22810e70}, 0x60?)
+	github.com/devgianlu/go-librespot/cmd/daemon/controls.go:575 +0x405
+main.(*AppPlayer).handleApiRequest(0x26cd227a70e0, {0xd26a40?, 0x13f38e0?}, {{0xcb5d04, 0x4}, {0x0, 0x0}, 0x26cd22810230})
+	github.com/devgianlu/go-librespot/cmd/daemon/player.go:504 +0x796
+main.(*AppPlayer).Run(0x26cd227a70e0, {0xd26a40, 0x13f38e0}, 0x26cd228220e0, 0x26cd22822150)
+	github.com/devgianlu/go-librespot/cmd/daemon/player.go:917 +0x6cf
+main.(*App).withAppPlayer(0x26cd224fcd00, {0xd26a40, 0x13f38e0}, 0x2?)
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:248 +0x6b3
+main.(*App).withCredentials(...)
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:211
+main.(*App).SpotifyToken(0x26cd224fcd00, {0xd26a40, 0x13f38e0}, {0x26cd22540be0?, 0x26cd22514ef0?}, {0x26cd2254e500?, 0xfc8?})
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:203 +0xc5
+main.main()
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:627 +0x745
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0xa30725]
+
+goroutine 1 [running]:
+main.(*AppPlayer).loadCurrentTrack(0x31f7e632eaa0, {0xd26b20, 0x31f7e62fae70}, 0x0, 0x1)
+	github.com/devgianlu/go-librespot/cmd/daemon/controls.go:308 +0x185
+main.(*AppPlayer).skipPrev(0x31f7e632eaa0, {0xd26b20, 0x31f7e62fae70}, 0x60?)
+	github.com/devgianlu/go-librespot/cmd/daemon/controls.go:575 +0x405
+main.(*AppPlayer).handleApiRequest(0x31f7e632eaa0, {0xd26a40?, 0x13f38e0?}, {{0xcb5d04, 0x4}, {0x0, 0x0}, 0x31f7e6588000})
+	github.com/devgianlu/go-librespot/cmd/daemon/player.go:504 +0x796
+main.(*AppPlayer).Run(0x31f7e632eaa0, {0xd26a40, 0x13f38e0}, 0x31f7e631a2a0, 0x31f7e631a310)
+	github.com/devgianlu/go-librespot/cmd/daemon/player.go:917 +0x6cf
+main.(*App).withAppPlayer(0x31f7e622ad00, {0xd26a40, 0x13f38e0}, 0x2?)
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:248 +0x6b3
+main.(*App).withCredentials(...)
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:211
+main.(*App).SpotifyToken(0x31f7e622ad00, {0xd26a40, 0x13f38e0}, {0x31f7e626ebe0?, 0x31f7e6242ef0?}, {0x31f7e627c500?, 0xfc8?})
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:203 +0xc5
+main.main()
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:627 +0x745
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0xa30725]
+
+goroutine 1 [running]:
+main.(*AppPlayer).loadCurrentTrack(0x26ee69712c80, {0xd26b20, 0x26ee694facb0}, 0x0, 0x1)
+	github.com/devgianlu/go-librespot/cmd/daemon/controls.go:308 +0x185
+main.(*AppPlayer).skipPrev(0x26ee69712c80, {0xd26b20, 0x26ee694facb0}, 0x60?)
+	github.com/devgianlu/go-librespot/cmd/daemon/controls.go:575 +0x405
+main.(*AppPlayer).handleApiRequest(0x26ee69712c80, {0xd26a40?, 0x13f38e0?}, {{0xcb5d04, 0x4}, {0x0, 0x0}, 0x26ee6949a4d0})
+	github.com/devgianlu/go-librespot/cmd/daemon/player.go:504 +0x796
+main.(*AppPlayer).Run(0x26ee69712c80, {0xd26a40, 0x13f38e0}, 0x26ee69732070, 0x26ee697320e0)
+	github.com/devgianlu/go-librespot/cmd/daemon/player.go:917 +0x6cf
+main.(*App).withAppPlayer(0x26ee69382d00, {0xd26a40, 0x13f38e0}, 0x2?)
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:248 +0x6b3
+main.(*App).withCredentials(...)
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:211
+main.(*App).SpotifyToken(0x26ee69382d00, {0xd26a40, 0x13f38e0}, {0x26ee693c6be0?, 0x26ee6939aef0?}, {0x26ee693d4500?, 0xfc8?})
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:203 +0xc5
+main.main()
+	github.com/devgianlu/go-librespot/cmd/daemon/main.go:627 +0x745

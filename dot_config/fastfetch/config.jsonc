@@ -1,0 +1,63 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "editor",
+    "de",
+    "wm",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "poweradapter",
+    "break",
+    "colors"
+  ],
+  "logo": {
+    "type": "auto",
+    "source": "~/.config/fastfetch/image/YoRHa.png",
+    "width": 45,
+    "height": 25,
+    "padding": {
+      "top": 0,
+      "left": 0,
+      "bottom": 0,
+      "right": 4
+    },
+    "printRemaining": true,
+    "preserveAspectRatio": false,
+    "cache": false,
+    "position": "left",
+    "chafa": {
+      "fgOnly": false,
+      "symbols": "block+border+space-wide-inverted"
+    },
+    "color": {
+      "1": "#a063dc",
+      "2": "#c663d4"
+    }
+  },
+  "display": {
+    "color": {
+      "keys": "#a086dc",
+      "title": "#c68ed4"
+    },
+    "percent": {
+      "color": {
+        "green": "#d092be",
+        "yellow": "#b3a1de",
+        "red": "#fd4663"
+      }
+    }
+  }
+}
